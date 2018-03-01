@@ -1,0 +1,33 @@
+---
+---
+
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <title>{{ page.title | default: site.title }}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    {% feed_meta %}
+
+    {% for font in site.google.fonts %}
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}">
+    {% endfor %}
+
+    {% for stylesheet in site.stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endfor %}
+
+    {% asset app.css %}
+  </head>
+  <body>
+    {{ content }}
+
+    <script async type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"
+      data-main="{% asset app.js @path %}">
+    </script>
+  </body>
+</html>
