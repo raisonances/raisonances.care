@@ -18,7 +18,8 @@ plugins:
 
 google:
   fonts:
-    - Lora
+    - Playfair+Display+SC
+    - Playfair+Display
 
 stylesheets:
   - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
