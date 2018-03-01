@@ -6,6 +6,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-sitemap"
   gem "jekyll-assets"
+  gem "jekyll-seo-tag"
 end
 
 gem "sass"
