@@ -23,6 +23,7 @@
     {% asset app.css %}
   </head>
   <body class="site {{ page.layout }}">
+
     <header id="header" class="site-header"
       style="background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @path %})">
       <div class="container">
@@ -37,7 +38,65 @@
     </header>
 
     <main id="main" class="site-main" role="main">
-      {{ content }}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      {% if page.layout == 'home' %}
+        <div id="grid" class="container grid">
+          <div class="row">
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Qui sommes nous ?
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/index.md %}">
+                Pour quels publics ?
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Supports de médiation
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Projet et Cadre thérapeutique
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Faire la démarche vers Raisonances
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Nous contacter
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                News
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Infos pratiques
+              </a>
+            </article>
+            <article class="col-md-4 col-sm-6">
+              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
+                Tarifs
+              </a>
+            </article>
+          </div>
+        </div>
+      {% endif %}
     </main>
 
     <footer id="footer" class="site-footer">

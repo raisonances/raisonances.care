@@ -3,11 +3,10 @@ layout: home
 permalink: /
 ---
 
-## La médiation thérapeutique à tous les âges de la Vie
+La médiation groupale à visée psychothérapeutique est une proposition soignante
+reposant sur "le partage d'une activité de faire et de penser autour d'un support
+commun nommé médiateur, qui va faire transition entre soi et le Monde" _&mdash; Archambeau_.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-qui officia deserunt mollit anim id est laborum.
+Le patient fait le choix du média. Il est acteur de sa démarche de soin, accompagnée
+par Raisonances, garante du cadre thérapeutique. En découlent un apaisement psychique
+et un mieux être global, qui s'installent progressivement.
