@@ -11,6 +11,8 @@ header:
   background: site-header.jpg
 
 markdown: kramdown
+markdown_ext: "markdown,md"
+
 plugins:
   - jekyll-assets
   - jekyll-feed

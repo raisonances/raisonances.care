@@ -1,3 +1,6 @@
+$font-default: 'Playfair Display', serif
+$font-smallcaps:  'Playfair Display SC', serif
+
 *
   line-height: 1.618 !important
   position: relative
@@ -6,10 +9,10 @@
   display: none !important
 
 body, .serif
-  font-family: 'Playfair Display', serif
+  font-family: $font-default
 
 .sc
-  font-family: 'Playfair Display SC', serif
+  font-family: $font-smallcaps
 
 body
   font-size: 16px
@@ -96,6 +99,7 @@ h5, h6
     padding-top: 0
     h2
       text-decoration: underline
+      font-family: $font-smallcaps
     & > .container
       margin-top: 0
       top: -30px
