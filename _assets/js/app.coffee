@@ -9,6 +9,12 @@ requirejs.config
 
 require [ 'modernizr', 'bootstrap' ], ->
   $(document).ready ->
-    console.log "Hello World !"
+    $('.scrollr').on 'click', ($event) ->
+      TargetId = $(this).attr('href')
+      $event.stopPropagation()
+      $event.preventDefault()
+      $('html, body').animate
+        scrollTop: $(TargetId).offset().top
+      return
     return
   return

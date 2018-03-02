@@ -1,13 +1,14 @@
-title: Your awesome title
+title: Raisonances
+subtitle: Le soin psychique par la médiation
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Raisonances, le soin psychique par la médiation
 baseurl: ""
-url: https://raisonances.github.io
+url: https://raisonances.care
 github:
-  url: https://raisonances.github.io
+  url: https://raisonances.care
 lang: fr
+header:
+  background: site-header.jpg
 
 markdown: kramdown
 plugins:
@@ -26,3 +27,6 @@ stylesheets:
 
 assets:
   compression: true
+
+include:
+  - _pages

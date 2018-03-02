@@ -22,8 +22,33 @@
 
     {% asset app.css %}
   </head>
-  <body>
-    {{ content }}
+  <body class="site {{ page.layout }}">
+    <header id="header" class="site-header"
+      style="background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @path %})">
+      <div class="container">
+        <div class="wrapper">
+          <div class="content">
+            <h1 class="sc">{{ page.title | default: site.title }}</h1>
+            <p class="subtitle">{{ page.subtitle | default: site.subtitle }}</p>
+            <a class="scrollr" href="#main">&#9662</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      {{ content }}
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <a class="legal" href="{{ site.baseurl }}{% link _pages/legal.md %}">Mentions légales</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script async type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"
