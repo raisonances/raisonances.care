@@ -1,8 +1,21 @@
+{% assign description = page.description | default: site.description %}
+
+{% capture title %}
+  {{ site.title }}
+  {% if page.layout != 'home' %}
+    | {{ page.title }}
+  {% endif %}
+  {% if page.subtitles %}
+    | {{ page.subtitles | join: ', ' }}
+  {% endif %}
+{% endcapture %}
+
 <!doctype html>
 <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
   <head>
-    <title>{{ page.title | default: site.title }} | {{ page.subtitle | default: site.subtitle }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{{ title }}</title>
+
+    <meta name="description" content="{{ description }}">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,11 +39,16 @@
 
     <header id="header" class="site-header"
       style="background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @path %})">
+      {% if page.layout != 'home' %}
+        <a id="to_home" href="{{ site.baseurl }}{% link _pages/index.md %}">Accueil</a>
+      {% endif %}
       <div class="container">
         <div class="wrapper">
           <div class="content">
             <h1 class="sc">{{ page.title | default: site.title }}</h1>
-            <p class="subtitle">{{ page.subtitle | default: site.subtitle }}</p>
+            {% for subtitle in page.subtitles %}
+              <p class="subtitle">{{ subtitle }}</p>
+            {% endfor %}
             <a class="scrollr" href="#main">&#9662;</a>
           </div>
         </div>
@@ -47,55 +65,7 @@
       </div>
 
       {% if page.layout == 'home' %}
-        <div id="grid" class="container grid">
-          <div class="row">
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Qui sommes nous ?
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/index.md %}">
-                Pour quels publics ?
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Supports de médiation
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Projet et Cadre thérapeutique
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Faire la démarche vers Raisonances
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Nous contacter
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                News
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Infos pratiques
-              </a>
-            </article>
-            <article class="col-md-4 col-sm-6">
-              <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-                Tarifs
-              </a>
-            </article>
-          </div>
-        </div>
+        {% include grid-nav.html %}
       {% endif %}
     </main>
 

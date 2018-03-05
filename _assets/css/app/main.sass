@@ -1,0 +1,39 @@
+#main
+  padding: 0 0 20px
+  font-size: 20px
+  h2
+    text-decoration: underline
+    font-family: $font-smallcaps
+  .container
+    margin-top: 0
+    top: -30px
+    margin-bottom: 20px
+    padding: 40px
+    background-color: #fff
+  nav.container
+    background: transparent
+    padding: 0
+    article
+      display: inline-table
+      height: 200px
+      margin-top: 15px
+      margin-bottom: 15px
+      & > a
+        display: table-cell
+        height: 100%
+        padding: 20px
+        background-color: #ababab
+        color: #fff
+        cursor: pointer
+        text-align: center
+        vertical-align: middle
+        font-family: $font-smallcaps
+        font-weight: bold
+        font-size: 16px
+        &:hover
+          background-color: #9a9a9a
+
+@media screen and (max-width: 779px)
+  #main
+    .container
+      width: calc(100% - 30px)

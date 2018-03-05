@@ -1,14 +1,11 @@
 title: Raisonances
-subtitle: Le soin psychique par la médiation pour tous
 description: >-
-  Raisonances, le soin psychique par la médiation
+  Raisonances, la médiation thérapeutique, un soin psychique pour tous
 baseurl: ""
 url: https://raisonances.care
 github:
   url: https://raisonances.care
 lang: fr
-header:
-  background: site-header.jpg
 
 markdown: kramdown
 markdown_ext: "markdown,md"
@@ -29,6 +26,12 @@ stylesheets:
 
 assets:
   compression: true
+sass:
+  sass_dir: _sass
+  style: compressed
 
 include:
   - _pages
+
+header:
+  background: site-header.jpg

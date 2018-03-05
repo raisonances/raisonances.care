@@ -1,10 +1,8 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /projet-et-cadre-therapeutique.html
 
-  title: Mentions légales
-  subtitles:
-    - conformes à la Loi n° 2004-575 du 21 juin 2004
+  title: Projet et cadre thérapeutique
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
