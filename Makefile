@@ -15,6 +15,7 @@ init:
 	bundle install
 
 deploy:
+	rm -rf _site/*
 	bundle exec jekyll build
 	(cd _site && git add . && git commit -m "[deploy $(release)] $(message)" && git push)
 	git add .
