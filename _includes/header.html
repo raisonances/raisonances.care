@@ -1,0 +1,14 @@
+<header id="header" class="site-header"
+  style="background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @path %})">
+  <div class="container">
+    <div class="wrapper">
+      <div class="content">
+        <h1 class="sc">{{ page.title | default: site.title }}</h1>
+        {% for subtitle in page.subtitles %}
+          <p class="subtitle">{{ subtitle }}</p>
+        {% endfor %}
+        <a class="scrollr" href="#main">&#9662;</a>
+      </div>
+    </div>
+  </div>
+</header>
