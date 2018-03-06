@@ -24,6 +24,9 @@ google:
 stylesheets:
   - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
 
+header:
+  background: site-header.jpg
+
 assets:
   compression: true
 sass:
@@ -33,5 +36,5 @@ sass:
 include:
   - _pages
 
-header:
-  background: site-header.jpg
+exclude:
+  - Makefile
