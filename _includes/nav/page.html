@@ -1,22 +1,28 @@
-<div id="navbar">
+<div class="navbar">
   <div class="inner">
-    <a href="#nav">
-      <span class="glyphicon glyphicon-menu-hamburger"></span>
-    </a>
+    <a class="toggle-nav-overlay glyphicon glyphicon-menu-hamburger" href="#nav" data-action="show"></a>
   </div>
 </div>
 
-<nav id="nav" role="nav" class="nav-{{ page.layout }} nav-sidebar">
-  <ul class="primary-navigation sc">
-    <li><a href="{{ site.baseurl }}{% link _pages/index.md %}">Accueil</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/about.md %}">Qui sommes-nous ?</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/blog.md %}">Actualités</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/contact.md %}">Nous contacter</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/demarche.md %}">Faire la démarche</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/infos.md %}">Infos pratiques</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/projet.md %}">Projet et cadre thérapeutique</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/publics.md %}">Pour quels publics ?</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/supports.md %}">Supports de médiation</a></li>
-    <li><a href="{{ site.baseurl }}{% link _pages/tarifs.md %}">Tarifs</a></li>
-  </ul>
+<nav id="nav" role="nav" class="nav-{{ page.layout }} nav-sidebar overlay">
+  <div class="navbar">
+    <div class="inner">
+      <a class="toggle-nav-overlay glyphicon glyphicon-remove" href="#nav" data-action="hide"></a>
+    </div>
+  </div>
+
+  <div class="inner">
+    <ul class="primary-navigation sc">
+      <li><a href="{{ site.baseurl }}{% link _pages/index.md %}">Accueil</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/about.md %}">Qui sommes-nous ?</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/blog.md %}">Actualités</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/contact.md %}">Nous contacter</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/demarche.md %}">Faire la démarche</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/infos.md %}">Infos pratiques</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/projet.md %}">Projet et cadre thérapeutique</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/publics.md %}">Pour quels publics ?</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/supports.md %}">Supports de médiation</a></li>
+      <li><a href="{{ site.baseurl }}{% link _pages/tarifs.md %}">Tarifs</a></li>
+    </ul>
+  </div>
 </nav>
