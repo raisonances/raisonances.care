@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /contact.html
 
-  slug: legal
-  title: Mentions légales
+  title: Nous contacter
+  slug: contact
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: feather-3010848_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

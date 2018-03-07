@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /tarifs.html
 
-  slug: legal
-  title: Mentions légales
+  slug: tarifs
+  title: Tarifs
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: water-1761027_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

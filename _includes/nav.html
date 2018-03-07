@@ -1,4 +1,3 @@
-{% case page.layout %}
-  {% when 'page' %}
-    {% include nav/page.html %}
-{% endcase %}
+{% if page.layout != 'home' and page.layout != 'post' %}
+  {% include nav/page.html %}
+{% endif %}

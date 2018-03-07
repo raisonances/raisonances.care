@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /pour-quels-publics.html
 
-  slug: legal
-  title: Mentions légales
+  slug: publics
+  title: Pour quels publics ?
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: smartphone-1987212_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

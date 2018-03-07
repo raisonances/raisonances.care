@@ -1,9 +1,13 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /supports-de-mediation.html
 
-  slug: legal
-  title: Mentions légales
+  slug: supports
+  title: Supports de médiation
+
+  nav:
+    - page
+    - home
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /blog/
 
-  slug: legal
-  title: Mentions légales
+  title: Actualités
+  slug: blog
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: street-1026246_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

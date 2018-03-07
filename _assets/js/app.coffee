@@ -8,6 +8,8 @@ requirejs.config
     bootstrap: [ 'jquery' ]
 
 require [ 'modernizr', 'bootstrap' ], ->
+  Page = $('html, body')
+
   # navigation overlay
   ToggleNavigationOverlay = ($event) ->
     Element = $(this)
@@ -17,15 +19,23 @@ require [ 'modernizr', 'bootstrap' ], ->
     $event.stopPropagation()
     $event.preventDefault()
     if $(window).scrollTop() isnt 0
-      $('html, body').animate { scrollTop: 0 }, ->
+      Page.animate { scrollTop: 0 }, ->
         switch Action
-          when 'hide' then Target.removeClass 'active'
-          when 'show' then Target.addClass 'active'
+          when 'hide'
+            Target.removeClass 'active'
+            Page.css { overflow: 'auto' }
+          when 'show'
+            Target.addClass 'active'
+            Page.css { overflow: 'hidden' }
         return
     else
       switch Action
-        when 'hide' then Target.removeClass 'active'
-        when 'show' then Target.addClass 'active'
+        when 'hide'
+          Target.removeClass 'active'
+          Page.css { overflow: 'auto' }
+        when 'show'
+          Target.addClass 'active'
+          Page.css { overflow: 'hidden' }
     return
 
   # scroll-on-click
@@ -33,8 +43,7 @@ require [ 'modernizr', 'bootstrap' ], ->
     TargetId = $(this).attr('href')
     $event.stopPropagation()
     $event.preventDefault()
-    $('html, body').animate
-      scrollTop: $(TargetId).offset().top
+    Page.animate { scrollTop: $(TargetId).offset().top }
     return
 
   ###

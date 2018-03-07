@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /infos-pratiques.html
 
-  slug: legal
-  title: Mentions légales
+  slug: infos
+  title: Infos pratiques
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: thought-2123970_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

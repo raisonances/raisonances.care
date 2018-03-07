@@ -1,49 +1,15 @@
 <nav role="nav" class="nav-{{ page.layout }} container">
   <div class="row">
-    <article class="col-md-4 col-sm-6 col-xs-12">
-      <a href="{{ site.baseurl }}{% link _pages/about.md %}">
-        Qui sommes nous ?
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/publics.md %}">
-        Pour quels publics ?
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/supports.md %}">
-        Supports de médiation
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/projet.md %}">
-        Projet et Cadre thérapeutique
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/demarche.md %}">
-        Faire la démarche vers Raisonances
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/contact.md %}">
-        Nous contacter
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/blog.md %}">
-        Actualités
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/infos.md %}">
-        Infos pratiques
-      </a>
-    </article>
-    <article class="col-md-4 col-sm-6 col-xs-6">
-      <a href="{{ site.baseurl }}{% link _pages/tarifs.md %}">
-        Tarifs
-      </a>
-    </article>
+    {% for __page in site.pages %}
+      {% for nav in __page.nav %}
+        {% if nav == 'home' and __page.url != page.url %}
+          <article class="col-xs-6 col-md-4 col-lg-4">
+            <a href="{{ site.baseurl }}{{ __page.url }}">
+              <span>{{ __page.ref | default: __page.title }}</span>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   </div>
 </div>

@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /qui-sommes-nous.html
 
-  slug: legal
-  title: Mentions légales
+  title: Qui sommes-nous ?
+  slug: about
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: paint-2985569_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

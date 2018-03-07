@@ -1,9 +1,13 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /projet-et-cadre-therapeutique.html
 
-  slug: legal
-  title: Mentions légales
+  slug: projet
+  title: Cadre thérapeutique
+
+  nav:
+    - page
+    - home
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

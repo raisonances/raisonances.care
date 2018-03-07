@@ -25,7 +25,7 @@ stylesheets:
   - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
 
 header:
-  background: site-header.jpg
+  background: ceramic-3050615_1920.jpg
 
 assets:
   compression: true

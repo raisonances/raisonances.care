@@ -1,7 +1,3 @@
-#
-#
-#
-
 timestamp=$(shell date +%Y%m%d%H%M%S)
 release=r$(timestamp)
 message?=""

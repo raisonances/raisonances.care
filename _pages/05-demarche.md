@@ -1,9 +1,16 @@
 ---
   layout: page
-  permalink: /mentions-legales.html
+  permalink: /faire-la-demarche.html
 
-  slug: legal
-  title: Mentions légales
+  title: Faire la démarche
+  slug: demarche
+
+  nav:
+    - page
+    - home
+
+  header:
+    background: rail-2803725_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
