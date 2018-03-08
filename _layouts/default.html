@@ -25,6 +25,8 @@
 
     {% seo %}
 
+    {% include prerender.html %}
+
     {% for font in site.google.fonts %}
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={{ font }}">
     {% endfor %}

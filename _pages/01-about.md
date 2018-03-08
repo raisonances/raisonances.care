@@ -11,6 +11,9 @@
 
   header:
     background: paint-2985569_1920.jpg
+
+  prerender:
+    - index
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

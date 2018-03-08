@@ -11,6 +11,9 @@
 
   header:
     background: water-1761027_1920.jpg
+
+  prerender:
+    - index
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

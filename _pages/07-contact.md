@@ -11,6 +11,9 @@
 
   header:
     background: feather-3010848_1920.jpg
+
+  prerender:
+    - index
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

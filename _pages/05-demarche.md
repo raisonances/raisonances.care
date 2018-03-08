@@ -11,6 +11,9 @@
 
   header:
     background: rail-2803725_1920.jpg
+
+  prerender:
+    - index
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
