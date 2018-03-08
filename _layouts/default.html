@@ -25,6 +25,10 @@
 
     {% seo %}
 
+    {% if page.layout == 'home' %}
+      {% include home/prerender.html %}
+    {% endif %}
+
     {% for font in site.google.fonts %}
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={{ font }}">
     {% endfor %}
