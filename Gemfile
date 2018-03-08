@@ -11,7 +11,6 @@ group :jekyll_plugins do
 end
 
 gem "sass"
-gem "coffee-script"
 gem "uglifier"
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

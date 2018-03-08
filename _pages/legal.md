@@ -4,6 +4,9 @@
 
   slug: legal
   title: Mentions légales
+
+  header:
+    background: rope-3052477_1920.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

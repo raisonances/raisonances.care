@@ -7,7 +7,11 @@
         {% for subtitle in page.subtitles %}
           <p class="subtitle">{{ subtitle }}</p>
         {% endfor %}
-        <a class="scrollr" href="#main">&#9662;</a>
+        {% if page.layout == 'notfound' %}
+          <a class="to-home" href="/">Cliquez ici</a>
+        {% else %}
+          <a class="scroll-to" href="#main">&#9662;</a>
+        {% endif %}
       </div>
     </div>
   </div>

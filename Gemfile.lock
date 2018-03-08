@@ -13,10 +13,6 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     em-websocket (0.5.1)
@@ -113,7 +109,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
   jekyll (~> 3.7.3)
   jekyll-assets
   jekyll-bootstrap-sass

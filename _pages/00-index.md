@@ -2,7 +2,7 @@
   layout: home
   permalink: /
 
-  slug: home
+  slug: index
   title: Raisonances
   subtitles:
     - La médiation thérapeutique

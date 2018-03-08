@@ -35,14 +35,16 @@
 
     {% include header.html %}
 
-    <main id="main" class="site-main" role="main">
-      {{ content }}
-    </main>
+    {% if page.layout != 'notfound' %}
+      <main id="main" class="site-main" role="main">
+        {{ content }}
+      </main>
 
-    {% include footer.html %}
+      {% include footer.html %}
 
-    {% include nav.html %}
+      {% include navigation.html %}
 
-    {% asset app.js @inline %}
+      {% asset app.js @inline %}
+    {% endif %}
   </body>
 </html>
