@@ -9,7 +9,6 @@ help:
 	@echo "raisonances.care - Makefile"
 	@echo "==========================="
 	@echo "    make init     : initialize project environment (git submodules, bundle...)"
-	@echo "    make serve    : serve project on localhost"
 	@echo "    make deploy   : deploy to github pages with commit message"
 	@echo "    make help     : display this help message"
 	@echo ""
