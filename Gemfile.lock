@@ -8,6 +8,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (8.1.0)
+      execjs
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -51,6 +56,9 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
+    jekyll-bootstrap-sass (0.1.0)
+      bootstrap-sass (~> 3.3)
+      jekyll (>= 2.5)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-sanity (1.2.0)
@@ -108,6 +116,7 @@ DEPENDENCIES
   coffee-script
   jekyll (~> 3.7.3)
   jekyll-assets
+  jekyll-bootstrap-sass
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
   jekyll-sitemap

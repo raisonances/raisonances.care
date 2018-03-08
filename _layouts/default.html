@@ -26,14 +26,10 @@
     {% seo %}
 
     {% for font in site.google.fonts %}
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={{ font }}">
     {% endfor %}
 
-    {% for stylesheet in site.stylesheets %}
-      <link rel="stylesheet" href="{{ stylesheet }}">
-    {% endfor %}
-
-    {% asset app.css %}
+    {% asset app.css @inline %}
   </head>
   <body class="site {{ page.layout }} {{ page.slug }}">
 
@@ -47,9 +43,6 @@
 
     {% include nav.html %}
 
-    <script async type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"
-      data-main="{% asset app.js @path %}">
-    </script>
+    {% asset app.js @inline %}
   </body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "name": "raisonances.care",
+  "version": "1.0.0",
+  "description": "raisonances.care website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve -o --livereload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisonances/raisonances.care.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/raisonances/raisonances.care/issues"
+  },
+  "homepage": "https://github.com/raisonances/raisonances.care#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

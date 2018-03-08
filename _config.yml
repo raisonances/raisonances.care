@@ -15,26 +15,32 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-bootstrap-sass
 
 google:
   fonts:
     - Playfair+Display+SC
     - Playfair+Display
 
-stylesheets:
-  - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
+bootstrap:
+  assets: true
 
 header:
   background: ceramic-3050615_1920.jpg
 
 assets:
   compression: true
-sass:
-  sass_dir: _sass
-  style: compressed
+  sources:
+    - node_modules/jquery/dist
+    - _site/assets/javascripts/bootstrap
 
 include:
   - _pages
 
 exclude:
   - Makefile
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
