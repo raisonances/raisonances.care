@@ -15,16 +15,6 @@
     - page
     - home
   ref: Accueil
-
-  prerender:
-    - about
-    - publics
-    - projet
-    - supports
-    - demarche
-    - contact
-    - infos
-    - tarifs
 ---
 
 La médiation groupale à visée psychothérapeutique est une proposition soignante

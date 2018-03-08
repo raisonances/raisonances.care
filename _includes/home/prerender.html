@@ -1,9 +1,0 @@
-<!-- browser optimization : start prerender block -->
-{% for slug in page.prerender %}
-  {% for __page in site.pages %}
-    {% if __page.slug == slug %}
-      <link rel="prerender" href="{{ site.baseurl }}{{ __page.url }}">
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-<!-- end prerender block -->
