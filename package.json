@@ -20,5 +20,6 @@
   "homepage": "https://github.com/raisonances/raisonances.care#readme",
   "dependencies": {
     "jquery": "^3.3.1"
-  }
+  },
+  "private": true
 }

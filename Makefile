@@ -1,6 +1,6 @@
 timestamp=$(shell date +%Y%m%d%H%M%S)
 release=r$(timestamp)
-message?=""
+message?=
 
 all: help
 
@@ -18,9 +18,6 @@ init:
 	(cd _site && git submodule init && git submodule update && git checkout master)
 	npm install
 	bundle install
-
-serve:
-	bundle exec jekyll serve -o --livereload
 
 deploy:
 	rm -rf _site/*
