@@ -2,10 +2,22 @@
   layout: default
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      {{ content }}
+{% if content.size > 1 %}
+  <div class="container hero">
+    <div class="row">
+      <div class="col-md-12">
+        {{ content }}
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
+
+
+{% for section in page.sections %}
+  <section class="container section" id="{{ section.title | slugify }}">
+    <h2 class="page-section-title">{{ section.title }}</h2>
+    <div class="content">
+      {{ section.content | markdownify }}
+    </div>
+  </section>
+{% endfor %}
