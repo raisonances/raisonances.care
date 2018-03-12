@@ -1,5 +1,8 @@
-<header id="header" class="site-header"
-  style="background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @path %})">
+{% capture header-style %}
+  background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %});
+{% endcapture %}
+
+<header id="header" class="site-header" style="{{ header-style }}"">
   <div class="container">
     <div class="wrapper">
       <div class="content">
