@@ -32,6 +32,7 @@ assets:
   compression: true
   sources:
     - node_modules/jquery/dist
+    - node_modules/lodash
     - _site/assets/javascripts/bootstrap
 
 include:
