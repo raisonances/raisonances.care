@@ -12,27 +12,8 @@
 
 <!doctype html>
 <html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
-
   {% include head.html %}
-
-  <body class="site {{ page.layout }} {{ page.slug }}">
-
+  <body class="site _404">
     {% include header.html %}
-
-    {% if page.layout != 'notfound' %}
-      <main id="main" class="site-main" role="main">
-        {{ content }}
-      </main>
-
-      {% include footer.html %}
-
-      {% if page.layout != 'home' %}
-        {% include navigation.html %}
-      {% endif %}
-
-      <a id="scroll-top" href="#">&uarr;</a>
-
-      {% asset app.js @inline %}
-    {% endif %}
   </body>
 </html>

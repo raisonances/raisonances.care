@@ -1,0 +1,18 @@
+---
+  layout: default
+---
+
+{% for post in site.posts %}
+  <article class="container post">
+    <header>
+      <h3 class="title">
+        <a href="{{ post.url }}">{{ post.title }}</a><br />
+        <small><em>&mdash;&nbsp;publié le {{ post.date | date: "%d/%m/%Y" }}</em></small>
+      </h3>
+    </header>
+    <main>{{ post.excerpt }}</main>
+    <footer>
+      <a class="readmore" href="{{ post.url }}">Lire la suite&nbsp;&rarr;</a>
+    </footer>
+  </article>
+{% endfor %}

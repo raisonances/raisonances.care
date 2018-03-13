@@ -6,7 +6,7 @@ $(document).ready(function() {
     $event.preventDefault();
 
     var targetId = $(this).attr('href');
-    container.animate({ scrollTop: $(targetId).offset().top });
+    container.animate({ scrollTop: $(targetId).offset().top - 40 });
   });
 
   $('.toggle-navigation-overlay').on('click', function($event) {

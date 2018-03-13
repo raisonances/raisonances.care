@@ -2,4 +2,36 @@
   layout: default
 ---
 
-{{ content }}
+<nav class="container" role="nav">
+  <div class="row">
+    <div class="col-xs-6 text-left">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">&larr;&nbsp;{{ page.previous.title }}</a>
+      {% endif %}
+    </div>
+    <div class="col-xs-6 text-right">
+      {% if page.next %}
+        <a href="{{ page.next.url }}">{{ page.next.title }}&nbsp;&rarr;</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <article class="col-md-12">
+      <header>
+        <h1>
+          <span>{{ page.title }}</span><br />
+          <em><small>{{ page.date | date: "%d/%m/%Y" }}</small></em>
+        </h1>
+      </header>
+      <main class="content">
+        {{ content }}
+      </main>
+      <footer>
+
+      </footer>
+    </article>
+  </div>
+</div>

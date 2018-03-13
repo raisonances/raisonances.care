@@ -1,21 +1,34 @@
-{% capture header-style %}
-  background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %});
-{% endcapture %}
-
-<header id="header" class="site-header" style="{{ header-style }}">
-  <div class="container">
-    <div class="wrapper">
-      <div class="content">
-        <h1 class="sc">{{ page.title | default: site.title }}</h1>
-        {% for subtitle in page.subtitles %}
-          <p class="subtitle">{{ subtitle }}</p>
-        {% endfor %}
-        {% if page.layout == 'notfound' %}
-          <a class="to-home" href="/">Cliquez ici</a>
-        {% else %}
-          <a class="scroll-to" href="#main">&#9662;</a>
-        {% endif %}
+{% if page.layout == 'post' %}
+  <header id="header" class="site-header">
+    <div class="container">
+      <div class="row">
+        <a class="to-home col-xs-6" href="{% link _pages/00-index.md %}">&#8624;&nbsp;Accueil</a>
+        <a class="to-blog col-xs-6" href="{% link _pages/09-blog.md %}">Blog&nbsp;&#8625;</a>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+{% else %}
+  {% capture header-style %}
+    background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %});
+  {% endcapture %}
+
+  <header id="header" class="site-header" style="{{ header-style }}">
+    <div class="container">
+      <div class="wrapper">
+        <div class="content">
+          <h1>
+            <span class="sc">{{ page.title | default: site.title }}</span>
+          </h1>
+          {% for subtitle in page.subtitles %}
+            <p class="subtitle">{{ subtitle }}</p>
+          {% endfor %}
+          {% if page.layout == 404 %}
+            <a class="to-home" href="/">Cliquez ici</a>
+          {% else %}
+            <a class="scroll-to" href="#main">&#9662;</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+{% endif %}

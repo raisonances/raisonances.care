@@ -1,4 +1,5 @@
-//=require jquery
-//=require bootstrap
+//= require jquery
+//= require bootstrap
 
-//=require ./app/navigation
+//= require ./app/navigation
+//= require ./app/scrolltop
