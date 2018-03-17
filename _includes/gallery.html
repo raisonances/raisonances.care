@@ -1,0 +1,42 @@
+{% if page.gallery and page.gallery.size > 0 %}
+  <div class="container" id="gallery">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 gallery-collection">
+        {% for __item in page.gallery %}
+          {% assign pos = forloop.index0 | modulo:2 %}
+          {% if pos == 0 %}
+            <article class="gallery-item">
+              {% asset '{{ __item.src }}'
+                  srcset:width=570
+                  srcset:width=540
+                  srcset:width=480
+                  srcset:width=360
+                  alt='{{ __item.alt }}'
+                  title='{{ __item.title }}'
+                %}
+              <div class="title">{{ __item.title }}</div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col-xs-12 col-sm-6 gallery-collection">
+        {% for __item in page.gallery %}
+          {% assign pos = forloop.index0 | modulo:2 %}
+          {% if pos == 1 %}
+            <article class="gallery-item">
+              {% asset '{{ __item.src }}'
+                  srcset:width=570
+                  srcset:width=540
+                  srcset:width=480
+                  srcset:width=360
+                  alt='{{ __item.alt }}'
+                  title='{{ __item.title }}'
+                %}
+              <div class="title">{{ __item.title }}</div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

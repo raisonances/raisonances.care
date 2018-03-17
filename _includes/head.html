@@ -18,4 +18,12 @@
   {% endfor %}
 
   {% asset app.css @inline %}
+
+  {% if page.layout != 'post' %}
+    <style rel="stylesheet" type="text/css">
+      #header {
+        background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %})
+      }
+    </style>
+  {% endif %}
 </head>
