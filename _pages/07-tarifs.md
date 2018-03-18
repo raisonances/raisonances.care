@@ -8,6 +8,7 @@
   nav:
     - page
     - home
+    - supports
 
   header:
     background: water-1761027_1920.jpg
@@ -16,9 +17,17 @@
     - index
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
+<center style="margin-bottom: 30px">
+  <strong>Prix de la séance : 47 euros</strong>
+</center>
+
+
+La tarification, calculée à la séance pour chaque usager, intègre le travail de
+chacun des 2 professionnels durant la séance ainsi que tout le travail d'élaboration
+clinique pluridisciplinaire, la rédaction et la transmission des bilans intermédiaire
+et finaux.
+
+Un contrat est systématiquement établi entre l'usager et Raisonances.
+
+Dans le cas d'établissements demandeurs, une convention est établie pour encadrer
+la prise en charge des usagers nous étant adressés.

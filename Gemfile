@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-assets"
   gem "jekyll-seo-tag"
   gem "jekyll-bootstrap-sass"
+  gem "jekyll-last-modified-at"
 end
 
 gem "sass"

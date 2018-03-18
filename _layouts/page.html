@@ -15,7 +15,14 @@
 
 {% for section in page.sections %}
   <section class="container section" id="{{ section.title | slugify }}">
-    <h2 class="page-section-title">{{ section.title }}</h2>
+    {% if section.title %}
+      <h2 class="page-section-title">
+        <span>{{ section.title }}</span>
+        {% if section.subtitle %}
+          <br /><small>{{ section.subtitle }}</small>
+        {% endif %}
+      </h2>
+    {% endif %}
     <div class="content">
       {{ section.content | markdownify }}
     </div>

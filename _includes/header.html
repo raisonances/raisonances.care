@@ -9,8 +9,8 @@
   </header>
 {% else %}
   <header id="header" class="site-header">
-    {% if page.layout == 'blog' %}
-      <a id="to-home" href="{% link _pages/00-index.md %}">&larr;&nbsp;Accueil</a>
+    {% if page.layout != 'home' %}
+      <a id="to-home" class="btn" href="{% link _pages/00-index.md %}">Accueil</a>
     {% endif %}
     <div class="container">
       <div class="wrapper">
@@ -23,8 +23,6 @@
           {% endfor %}
           {% if page.layout == 404 %}
             <a class="to-home" href="/">Cliquez ici</a>
-          {% else %}
-            <a class="scroll-to" href="#main">&#9662;</a>
           {% endif %}
         </div>
       </div>

@@ -14,6 +14,7 @@
   nav:
     - page
     - home
+    - supports
 
   ref: Accueil
 

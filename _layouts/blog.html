@@ -2,12 +2,22 @@
   layout: default
 ---
 
+{% if content.size > 1 and site.posts.size == 0 %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
 {% for post in site.posts %}
   <article class="container post">
     <header>
       <h3 class="title">
         <a href="{{ post.url }}">{{ post.title }}</a><br />
-        <small><em>&mdash;&nbsp;publié le {{ post.date | date: "%d/%m/%Y" }}</em></small>
+        <small><em>Publié le {{ post.date | date: "%d/%m/%Y" }}</em></small>
       </h3>
     </header>
     <main>{{ post.excerpt }}</main>

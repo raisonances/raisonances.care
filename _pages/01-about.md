@@ -8,36 +8,73 @@
   nav:
     - page
     - home
+    - supports
 
   header:
     background: paint-2985569_1920.jpg
 
   prerender:
     - index
+    - cadre-therapeutique
+    - supports
 
   sections:
     -
-      title: Section 1
+      title: Nos valeurs
       content: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        Raisonances est une structure démocratique, horizontale et collaborative, articulée
+        autour de ses valeurs fondatrices:
 
-        [Google](https://google.fr)
+        1. le partage par la collaboration équilibrée entre diverses disciplines, dans le cadre de la réalisation d'un projet innovant
+        2. l'utilité sociale par la réponse aux besoins de nombreux usagers qui, à l'heure actuelle, ne sont pas pleinement satisfaits tant sur le plan qualitatif que quantitatif sur le territoire local
+        3. une transparence dans la gestion qui se veut désintéressée, tournée vers le développement et la diversification des outils et des objectifs de l'association, dans un engagement à une démarche continue d'amélioration de la qualité, qui s'appuiera sur des échanges permanents entre usagers, partenaires-usagers, partenaires-opérationnels et professionnels adhérents
+        4. le souci d'ouvrir les échanges et de communiquer autour des médiations thérapeutiques, par l'organisation de journées, la publication d'articles, voire la fondation de revues spécialisées
     -
-      title: Section 2
+      title: Notre équipe
+      subtitle: Liste des qualifications répertoriées au sein de l'équipe de Raisonances
       content: |
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-        amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-        nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        Nous regroupons de nombreuses disciplines:
+
+        * 1 médecin psychiatre
+        * 4 psychologues
+        * 2 orthophonistes
+        * 1 sophrologue
+        * 5 arthérapeutes
+        * 1 kinésithérapeute
+        * 2 infirmières
+        * 1 philosophe
+        * 1 socio-esthéticienne
+        * 1 sculpteur
+        * 1 cuisinier créateur
+        * 1 professeure de danse contemporaine
+        * 1 professeure de chant
+        * 7 intervenants socio-éducatifs
+        * 1 informaticien
+
+        un nombre important de professionnels ayant une double qualification.
 ---
+
+## La structure
+
+Raisonances est une Association régie par la loi du 1er juillet 1901.
+
+Elle a été fondée par un groupe de professionnels diplômés exerçant ou ayant
+exercé dans leur grande majorité leur activité professionnelle dans l'environnement
+médico-social et l'accompagnement des usagers nécessitant, parmi d'autres apports,
+la mise en place d'une démarche thérapeutique qui vient prendre appui sur différents
+types de soins individuels et/ou collectifs.
+
+Ils ont ainsi pu repérer la nécessité de proposer, dans certains cas, des supports de
+médiation permettant de faciliter et d'instaurer, dans un cadre qualitativement défini,
+un cheminement à visée thérapeutique.
+
+Ces modalités d'accompagnement s'avèrent opérantes à tous les âges de la Vie, de
+la naissance au grand-âge, et permettent par l'adaptation très individualisée des
+[supports utilisés]({{ site.baseurl }}{% link _pages/04-supports.md %}) et du
+[cadre thérapeutique]({{ site.baseurl }}{% link _pages/03-cadre-therapeutique.md %})
+mis en place, de faire évoluer positivement des problématiques très variées.
+
+C'est donc dans le contexte de leur collaboration que quotidien qu'est née l'idée
+de mettre en place une structure dédiée spécifiquement aux soins psychiques par la
+médiation thérapeutique, destinée à tous les âges, avec le double objectif du curatif
+et du préventif.

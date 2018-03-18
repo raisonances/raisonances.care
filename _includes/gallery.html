@@ -14,7 +14,9 @@
                   alt='{{ __item.alt }}'
                   title='{{ __item.title }}'
                 %}
-              <div class="title">{{ __item.title }}</div>
+              {% if __item.title and __item.title.size > 0 %}
+                <div class="title">{{ __item.title }}</div>
+              {% endif %}
             </article>
           {% endif %}
         {% endfor %}
@@ -32,7 +34,9 @@
                   alt='{{ __item.alt }}'
                   title='{{ __item.title }}'
                 %}
-              <div class="title">{{ __item.title }}</div>
+                {% if __item.title and __item.title.size > 0 %}
+                  <div class="title">{{ __item.title }}</div>
+                {% endif %}
             </article>
           {% endif %}
         {% endfor %}
