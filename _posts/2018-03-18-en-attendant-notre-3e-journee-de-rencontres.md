@@ -1,6 +1,6 @@
 ---
   layout: post
-  title: En attendant notre 3e journée de rencontre
+  title: En attendant notre 3e journée de rencontres
   categories: blog
 
   gallery:

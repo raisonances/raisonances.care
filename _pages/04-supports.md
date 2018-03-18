@@ -12,4 +12,7 @@
 
   prerender:
     - index
+
+  header:
+    background: patchwork-0.png
 ---
