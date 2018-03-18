@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+  {% include head.html %}
+  <body id="contact">
+    <main class="wrapper">
+      <div class="inner">
+        {{ content }}
+      </div>
+    </main>
+    {% asset app.js @inline %}
+    {% if page.redirect %}
+      <script type="text/javascript">
+        window.setTimeout(function() {
+          window.location.href="{{ site.baseurl }}{% link _pages/00-index.md %}";
+        }, {{ page.redirect.delay }});
+      </script>
+    {% endif %}
+  </body>
+</html>

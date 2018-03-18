@@ -1,0 +1,54 @@
+---
+  layout: contact
+  permalink: /contact/
+
+  title: Nous contacter
+
+  nav:
+    - page
+    - home
+
+  prerender:
+    - index
+
+  header:
+    background: feather-3010848_1920.jpg
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-left">
+      <a href="javascript:history.back()"><u><small>[ &larr;&nbsp;Retour ]</small></u></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1><u>Nous contacter</u></h1>
+      <h3><u>Par courrier électronique</u></h3>
+      <p>
+        Pour nous contacter, il vous suffit de compléter le formulaire
+        <span class="hidden-md hidden-lg">ci-dessous</span>
+        <span class="hidden-xs hidden-sm">ci-joint</span>
+      </p>
+      <hr />
+      <h3><u>Par téléphone</u></h3>
+      <p>au 06-58-73-37-42 (Présidence)</strong></p>
+      <hr />
+      <h3><u>Nous rencontrer</u></h3>
+      <p>Vous pouvez prendre rendez-vous et nous vous recevrons.</p>
+      <a href="{% link _pages/05-infos.html %}"><u>Informations pratiques</u></a>
+    </div>
+    <form class="col-md-6 form-horizontal" class="hidden" id="_formspree" method="post" action="">
+      <input class="form-control" required type="email" name="_replyto" placeholder="Email *" />
+      <input class="form-control" required type="text" name="_subject" placeholder="Objet *" />
+      <textarea class="form-control" required name="message" placeholder="Message *"></textarea>
+
+      <input type="hidden" name="_language" value="fr" />
+      <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}{% link _pages/06-contact-success.html %}" />
+
+      <button class="btn btn-primary form-control sc" type="submit">
+        <i class="glyphicon glyphicon-send"></i>
+      </button>
+    </form>
+  </div>
+</div>

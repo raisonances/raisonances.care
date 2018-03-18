@@ -3,7 +3,7 @@
   permalink: /pour-quels-publics.html
 
   slug: publics
-  title: Pour quels publics ?
+  title: Publics et Objectifs
 
   nav:
     - page

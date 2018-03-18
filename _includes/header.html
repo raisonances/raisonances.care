@@ -3,12 +3,15 @@
     <div class="container">
       <div class="row">
         <a class="to-home col-xs-6" href="{% link _pages/00-index.md %}">&#8624;&nbsp;Accueil</a>
-        <a class="to-blog col-xs-6" href="{% link _pages/09-blog.md %}">Blog&nbsp;&#8625;</a>
+        <a class="to-blog col-xs-6" href="{% link _pages/08-blog.md %}">Blog&nbsp;&#8625;</a>
       </div>
     </div>
   </header>
 {% else %}
   <header id="header" class="site-header">
+    {% if page.layout == 'blog' %}
+      <a id="to-home" href="{% link _pages/00-index.md %}">&larr;&nbsp;Accueil</a>
+    {% endif %}
     <div class="container">
       <div class="wrapper">
         <div class="content">

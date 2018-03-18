@@ -1,17 +1,5 @@
-{% assign description = page.description | default: site.description %}
-
-{% capture title %}
-  {{ site.title }}
-  {% if page.layout != 'home' %}
-    | {{ page.title }}
-  {% endif %}
-  {% if page.subtitles %}
-    | {{ page.subtitles | join: ', ' }}
-  {% endif %}
-{% endcapture %}
-
 <!doctype html>
-<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'fr' }}">
 
   {% include head.html %}
 
@@ -22,13 +10,11 @@
     {% if page.layout != 'notfound' %}
       <main id="main" class="site-main" role="main">
         {{ content }}
+
+        {% include navigation.html %}
       </main>
 
       {% include footer.html %}
-
-      {% if page.layout != 'home' %}
-        {% include navigation.html %}
-      {% endif %}
 
       <a id="scroll-top" href="#">&uarr;</a>
 

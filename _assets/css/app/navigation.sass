@@ -1,11 +1,11 @@
 .navbar
-  position: absolute
+  position: fixed
   top: 0
   bottom: 0
   left: 0
   width: 30px
   background: transparent
-  color: #fff
+  color: #eee
   display: table
   .inner
     display: table-cell
@@ -15,7 +15,7 @@
     font-size: 16px
 
 #nav
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   height: 100vh
@@ -30,6 +30,7 @@
   &.active
     width: 600px
   .navbar
+    position: absolute
     color: inherit
   & > ul
     font-size: 0

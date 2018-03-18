@@ -1,45 +1,15 @@
-{% if page.layout == 'page' or page.layout == 'blog' %}
-  <div class="navbar">
-    <div class="inner">
-      <a class="toggle-navigation-overlay glyphicon glyphicon-menu-hamburger" href="#nav" data-action="show"></a>
-    </div>
+<nav role="nav" class="nav-{{ page.layout }} container">
+  <div class="row">
+    {% for __page in site.pages %}
+      {% for nav in __page.nav %}
+        {% if nav == page.layout and __page.url != page.url %}
+          <article class="col-xs-6 col-md-3">
+            <a href="{{ site.baseurl }}{{ __page.url }}">
+              <span>{{ __page.ref | default: __page.title }}</span>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   </div>
-
-  <nav id="nav" role="nav" class="nav-{{ page.layout }} nav-sidebar overlay">
-    <div class="navbar">
-      <div class="inner">
-        <a class="toggle-navigation-overlay glyphicon glyphicon-remove" href="#nav" data-action="hide"></a>
-      </div>
-    </div>
-
-    <ul>
-      {% for __page in site.pages %}
-        {% for nav in __page.nav %}
-          {% if nav == 'home' and __page.url != page.url %}
-            <li>
-              <a href="{{ site.baseurl }}{{ __page.url }}">
-                <span>{{ __page.ref | default: __page.title }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    </ul>
-  </nav>
-{% elsif page.layout == 'home' %}
-  <nav role="nav" class="nav-{{ page.layout }} container">
-    <div class="row">
-      {% for __page in site.pages %}
-        {% for nav in __page.nav %}
-          {% if nav == 'home' and __page.url != page.url %}
-            <article class="col-xs-6 col-md-4 col-lg-4">
-              <a href="{{ site.baseurl }}{{ __page.url }}">
-                <span>{{ __page.ref | default: __page.title }}</span>
-              </a>
-            </article>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    </div>
-  </nav>
-{% endif %}
+</nav>

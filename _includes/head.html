@@ -1,3 +1,15 @@
+{% assign description = page.description | default: site.description %}
+
+{% capture title %}
+  {{ site.title }}
+  {% if page.layout != 'home' %}
+    | {{ page.title }}
+  {% endif %}
+  {% if page.subtitles %}
+    | {{ page.subtitles | join: ', ' }}
+  {% endif %}
+{% endcapture %}
+
 <head>
   <title>{{ title }}</title>
 
@@ -20,10 +32,11 @@
   {% asset app.css @inline %}
 
   {% if page.layout != 'post' %}
+    {% capture background-container-element %}
+      {% if page.layout == 'contact' %}#contact{% else %}#header{% endif %}
+    {% endcapture %}
     <style rel="stylesheet" type="text/css">
-      #header {
-        background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %})
-      }
+      {{ background-container-element }}{ background-image: url({% asset '{{ page.header.background | default: site.header.background }}' @data %}); }
     </style>
   {% endif %}
 </head>
