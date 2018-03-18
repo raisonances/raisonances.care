@@ -2,9 +2,9 @@ title: Raisonances
 description: >-
   Raisonances, la médiation thérapeutique, un soin psychique pour tous
 baseurl: ""
-url: https://raisonances.care
+url: https://raisonances.github.io
 github:
-  url: https://raisonances.care
+  url: https://raisonances.github.io
 lang: fr
 
 markdown: kramdown
