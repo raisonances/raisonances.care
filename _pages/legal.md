@@ -40,7 +40,7 @@ Les formulaires de contact requièrent l'utilisation de JavaScript.
 
 Le présent site internet utilise des services extérieurs pour son fonctionnement :
 
-- [Google Maps Embed API](https://developers.google.com/maps/) pour l'affichage du plan de situation des locaux
+- [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/) pour l'affichage du plan de situation des locaux
 - [FormSpree](https://formspree.io) pour la gestion de nos formulaires de contact
 
 
