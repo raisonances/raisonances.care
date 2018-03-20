@@ -40,14 +40,14 @@ Les formulaires de contact requièrent l'utilisation de JavaScript.
 
 Le présent site internet utilise des services extérieurs pour son fonctionnement :
 
-- [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/) pour l'affichage du plan de situation des locaux
-- [FormSpree](https://formspree.io) pour la gestion de nos formulaires de contact
+- [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/){:target="_blank"} pour l'affichage du plan de situation des locaux
+- [FormSpree](https://formspree.io){:target="_blank"} pour la gestion de nos formulaires de contact
 
 
 ### _Hébergement_
 
 L'hébergement du présent site internet est assuré par GitHub Pages, un service gratuit
-proposé par [GitHub Inc.](https://github.com).
+proposé par [GitHub Inc.](https://github.com){:target="_blank"}.
 
 __GitHub Inc.__
 
