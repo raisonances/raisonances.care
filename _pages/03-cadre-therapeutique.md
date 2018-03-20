@@ -56,7 +56,7 @@
       title: Travail pluridisciplinaire
       subtitle: Protocole d'élaboration d'une réponse individualisée
       content: |
-        L'originalité du projet "Raisonances" reponse sur l'élaboration pluridisciplinaire
+        L'originalité du projet "Raisonances" repose sur l'élaboration pluridisciplinaire
         d'une réponse très individualisée à laquelle l'usager est associé, afin qu'il y
         tienne une place la plus active possible. Le lieu de l'interventtion peut se situer
         au delà des murs de Raisonances pour s'adapter à la demande et aux besoins des
