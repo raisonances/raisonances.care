@@ -55,7 +55,7 @@ __GitHub Inc.__
 
 San Francisco, CA 94107
 
-United States
+USA
 
 
 ### _Propriétaire_
