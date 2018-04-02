@@ -5,7 +5,7 @@
   slug: index
   title: Raisonances
   subtitles:
-    - La médiation thérapeutique
+    - La médiation thérapeutique groupale
     - un soin psychique pour tous
 
   header:
