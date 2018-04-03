@@ -38,7 +38,7 @@
         3. le médiateur support
         4. le temps de parole, afin de verbaliser autour des ressentis et de "l'objet créé" et d'accéder au processus de symbolisation attendu
         5. la régulation, réalisée par les professoinnels, qui vient étayer l'analyse des contenus de séances
-        6. la flexibilité dans la constitution et l'évolution possible du nombre de participants (notion de groupe-ouvert, semi-ouvert, fermé), à définir en fonction de sobjectifs fixés
+        6. la flexibilité dans la constitution et l'évolution possible du nombre de participants (notion de groupe-ouvert, semi-ouvert, fermé), à définir en fonction des objectifs fixés
         7. les modalités d'inscription dans le temps des séances de médiation, soit sous la forme d'un espace permanent au long cours qui va s'adapter au besoin de chaque usager, soit sous celle d'un programme de séances dont le nombre et les dates sont définis à l'avance (environ 10 séances en moyenne).
 
         __Chaque programme ou atelier permanent de médiation thérapeutique est le fruit d'une élaboration unique et originale, qui peut être issue du "tissage" de plusieurs approches mises en synergie.__
