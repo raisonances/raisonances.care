@@ -16,7 +16,7 @@ help:
 init:
 	(cd _site && git submodule init && git submodule update && git checkout master)
 	npm install
-	bundle install
+	bundle install --path vendor/bundle
 
 deploy:
 	rm -rf _site/*
