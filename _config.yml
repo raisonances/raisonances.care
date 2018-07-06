@@ -41,6 +41,8 @@ include:
 exclude:
   - Makefile
   - node_modules/
+  - vendor/
+  - .bundle/
   - package.json
   - package-lock.json
   - Gemfile
