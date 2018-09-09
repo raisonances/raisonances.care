@@ -1,6 +1,6 @@
 ---
   layout: supports
-  permalink: /supports-de-mediation.html
+  permalink: /supports/
 
   slug: supports
   title: Supports de médiation

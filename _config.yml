@@ -19,8 +19,8 @@ plugins:
 
 google:
   fonts:
-    - Playfair+Display+SC
-    - Playfair+Display
+    - Marcellus+SC
+    - Lora
 
 bootstrap:
   assets: true

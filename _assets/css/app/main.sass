@@ -25,13 +25,24 @@
         background-color: #ababab
         color: #fff
         cursor: pointer
-        text-align: center
+        text-align: left
         vertical-align: middle
         font-family: $font-smallcaps
         font-weight: bold
         font-size: 16px
         &:hover
           background-color: #9a9a9a
+    &#nav-support-category
+        margin-bottom: 80px
+        border-top: 1px solid #999
+        border-bottom: 1px solid #999
+        a
+            padding-right: 40px
+            &:before
+                content: '\2192'
+                display: block
+                position: absolute
+                right: 15px
 
 @media screen and (max-width: 809px)
   #main
@@ -49,33 +60,103 @@
   max-width: 100%
   border: 0
 
-.supports #main
-  .container
-    top: -80px
-    background-color: transparent
-    ul
-      background-color: #fff
-      color: #000
-      margin: 0
-      padding: 15px
-      height: 400px
-      border: 3px solid #000
-      &:nth-child(4n+3)
-        background-color: #c0392b
-        color: #fff
-      &:nth-child(4n+2)
-        background-color: #f5d76e
-        color: #333
-      &:nth-child(4n)
-        background-color: #22a7f0
-        color: #fff
-      li
-        padding: 15px
-
 .legal #main
-  font-size: 16px
-  color: #444
-  a, h3
-    text-decoration: underline
-  h3
-    margin-top: 50px
+    font-size: 16px
+    color: #444
+    a, h3
+        text-decoration: underline
+    h3
+        margin-top: 50px
+
+.supports #main
+    nav.container.nav-supports
+        display: none
+    nav.container#nav-support-category
+        a:hover
+            background-color: initial
+        .cat-ecriture
+            background-color: #e9c9b1
+            color: #fff
+            &:hover
+                background-color: #d2d7d3
+                color: #fff
+        .cat-philo
+            background-color: #3498db
+            color: #fff
+            &:hover
+                background-color: #52b3d9
+        .cat-nourriture
+            background-color: #9b59b6
+            color: #fff
+            &:hover
+                background-color: #8e44ad
+        .cat-corps
+            background-color: #ec644b
+            color: #fff
+            &:hover
+                background-color: #ef4836
+        .cat-arts-plastiques
+            background-color: #f4d03f
+            color: #fff
+            &:hover
+                background-color: #f9bf3b
+        .cat-multimedia
+            background-color: #95a5a6
+            color: #fff
+            &:hover
+                background-color: #6c7a89
+
+.support
+    #main
+        padding-top: 30px
+        .container
+            top: 0
+            padding: 0
+            background: transparent
+            a
+                text-decoration: underline
+        #back
+            text-decoration: none
+            font-weight: 900
+            font-size: 100px
+        h1
+            padding-top: 50px
+            font-size: 60px
+            font-weight: 900
+    footer
+        display: none
+
+
+.support.aliment #main
+    h1, h2
+        color: #9b59b6
+
+.support.arts-plastiques #main
+    h1, h2
+        color: #f4d03f
+
+.support.philosophie #main
+    h1, h2
+        color: #3498db
+
+.support.menu
+    #main
+        h2
+            font-family: $font-default
+            font-size: 100px
+            font-weight: 900
+            text-decoration: none
+            padding: 0
+            margin: 0
+            a
+                display: block
+                text-decoration: none
+                padding: 0
+                margin: 0
+                &:before
+                    display: block
+                    position: absolute
+                    right: 1em
+                    content: '\2192'
+                &:hover
+                    color: initial
