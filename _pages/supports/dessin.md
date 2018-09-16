@@ -7,8 +7,6 @@
 
   prerender:
     - supports
+
+  support: dessin
 ---
-
-# <br/><small><em>Sandie L., Art-thérapeute, Intervenante en Arts-Plastiques</em></small>
-
-<small><em>Autres supports : Peinture, Collage, Modelage</em></small>

@@ -7,4 +7,6 @@
 
   prerender:
     - supports
+
+  support: langage écrit & jeu de rôles
 ---

@@ -20,7 +20,7 @@ plugins:
 google:
   fonts:
     - Marcellus+SC
-    - Lora
+    - Marcellus
 
 bootstrap:
   assets: true

@@ -7,4 +7,6 @@
 
   prerender:
     - supports
+
+  support: esthetique corporelle
 ---

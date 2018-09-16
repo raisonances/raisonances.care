@@ -13,7 +13,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            {{ content }}
+            {% if page.slug contains "menu" %}
+                {{ content }}
+            {% else %}
+                {% for p in site.data.presentations %}
+                    {% if p.supports contains page.support %}
+                        <h2>{{ p.title }} <br /><small><em>{{ p.author }}</em></small></h2>
+                        <p><small><em>
+                            Supports: {{ p.supports | join: ", " }}
+                        </em></small></p>
+                        {{ p.content | markdownify }}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
