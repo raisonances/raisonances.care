@@ -19,7 +19,10 @@ init:
 	bundle install --path vendor/bundle
 
 deploy:
+	(cd _site && git pull)
+	if [ -f _site/CNAME ]; then mv _site/CNAME CNAME; fi
 	rm -rf _site/*
+	if [ -f CNAME ]; then mv CNAME _site/CNAME; fi
 	bundle exec jekyll build
 	(cd _site && git add . && git commit -m "[deploy $(release)] $(message)" && git push)
 	git add .
