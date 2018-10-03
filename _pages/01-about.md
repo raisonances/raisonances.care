@@ -74,7 +74,7 @@ la naissance au grand-âge, et permettent par l'adaptation très individualisée
 [cadre thérapeutique]({{ site.baseurl }}{% link _pages/03-cadre-therapeutique.md %})
 mis en place, de faire évoluer positivement des problématiques très variées.
 
-C'est donc dans le contexte de leur collaboration que quotidien qu'est née l'idée
+C'est donc dans le contexte de leur collaboration au quotidien qu'est née l'idée
 de mettre en place une structure dédiée spécifiquement aux soins psychiques par la
 médiation thérapeutique, destinée à tous les âges, avec le double objectif du curatif
 et du préventif.
